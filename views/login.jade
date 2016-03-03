@@ -1,0 +1,21 @@
+extends ./templates/main.jade
+block contenido
+    div(class="container-fluid")
+        form(id="login", method="POST",action="/login")
+            div(class="row")
+                div(class="col-md-2")
+                    label(for="email") Email:
+                div(class="col-md-10")
+                    input(class="form-control", type="text", name="email",id="email")
+            div(class="row")     
+                div(class="col-md-2")
+                    label(for="pass") Contraseña:
+                div(class="col-md-10")
+                     input(class="form-control", type="password", name="password",id="pass")
+            div(class="row")     
+                div(class="col-md-2")
+                    label(for="codigo") Codigo de seguridad:
+                div(class="col-md-10")
+                     input(class="form-control", type="text", name="codigo",id="codigo")
+            div(class="row")
+                input(type="submit", value="Iniciar Sesion", class="btn btn-primary")
