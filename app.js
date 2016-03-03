@@ -24,7 +24,7 @@ app.post("/login", function(req, res){
     console.log(req.body.codigo);
     
     
-    if(req.body.codigo==994){
+    if(req.body.codigo==999){
     
     res.send("Ha iniciado sesion");
     }else{
